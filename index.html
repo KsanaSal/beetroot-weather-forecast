@@ -5,77 +5,102 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="./css/reset.css" />
         <link rel="stylesheet" href="./css/styles.css" />
+        <link rel="stylesheet" href="./css/weather-icons.min.css" />
         <title>Beetroot Weather Forecast</title>
     </head>
     <body>
-        <header>
-            <h1>CSS Weather Forecast</h1>
-            <span>icon</span>
-        </header>
-        <main>
-            <ul>
-                <li>
-                    <h2>Lisbon</h2>
-                    <p>21°C</p>
-                    <span>icon</span>
-                </li>
-                <li>
-                    <h2>Paris</h2>
-                    <p>11°C</p>
-                    <span>icon</span>
-                </li>
-                <li>
-                    <h2>Belgrade</h2>
-                    <p>15°C</p>
-                    <span>icon</span>
-                </li>
-                <li>
-                    <h2>Venice</h2>
-                    <p>21°C</p>
-                    <span>icon</span>
-                </li>
-                <li>
-                    <h2>Tel-Avive</h2>
-                    <p>32°C</p>
-                    <span>icon</span>
-                </li>
-                <li>
-                    <h2>Cair</h2>
-                    <p>21°C</p>
-                    <span>icon</span>
-                </li>
-                <li>
-                    <h2>New-York</h2>
-                    <p>17°C</p>
-                    <span>icon</span>
-                </li>
-                <li>
-                    <h2>New-Delhi</h2>
-                    <p>17°C</p>
-                    <span>icon</span>
-                </li>
-                <li>
-                    <h2>San-Francisco</h2>
-                    <p>15°C</p>
-                    <span>icon</span>
-                </li>
-                <li>
-                    <h2>Tokyo</h2>
-                    <p>8°C</p>
-                    <span>icon</span>
-                </li>
-                <li>
-                    <h2>Sydney</h2>
-                    <p>25°C</p>
-                    <span>icon</span>
-                </li>
-            </ul>
-        </main>
-        <footer>
-            <p>
-                Have a nice day and don't forget umbrella if you are in New
-                Delhi now!
-            </p>
-        </footer>
+        <div class="container">
+            <header class="header">
+                <h1 class="title">CSS Weather Forecast</h1>
+                <i class="wi wi-sunrise"></i>
+            </header>
+            <main>
+                <ul class="list">
+                    <li class="list-item list-item--first">
+                        <h2>Lisbon</h2>
+                        <div class="list-item-weather">
+                            <p>21°C</p>
+                            <i class="wi wi-day-sunny"></i>
+                        </div>
+                    </li>
+                    <li class="list-item list-item--second">
+                        <h2>Paris</h2>
+                        <div class="list-item-weather">
+                            <p>11°C</p>
+                            <i class="wi wi-sleet"></i>
+                        </div>
+                    </li>
+                    <li class="list-item list-item--third">
+                        <h2>Belgrade</h2>
+                        <div class="list-item-weather">
+                            <p>15°C</p>
+                            <i class="wi wi-day-cloudy"></i>
+                        </div>
+                    </li>
+                    <li class="list-item list-item--fourth">
+                        <h2>Venice</h2>
+                        <div class="list-item-weather">
+                            <p>21°C</p>
+                            <i class="wi wi-day-cloudy-high"></i>
+                        </div>
+                    </li>
+                    <li class="list-item list-item--fifth">
+                        <h2>Tel-Avive</h2>
+                        <div class="list-item-weather">
+                            <p>32°C</p>
+                            <i class="wi wi-hot"></i>
+                        </div>
+                    </li>
+                    <li class="list-item list-item--sixth">
+                        <h2>Cair</h2>
+                        <div class="list-item-weather">
+                            <p>21°C</p>
+                            <i class="wi wi-day-sunny"></i>
+                        </div>
+                    </li>
+                    <li class="list-item list-item--seventh">
+                        <h2>New-York</h2>
+                        <div class="list-item-weather">
+                            <p>17°C</p>
+                            <i class="wi wi-day-sleet-storm"></i>
+                        </div>
+                    </li>
+                    <li class="list-item list-item--eighth">
+                        <h2>New-Delhi</h2>
+                        <div class="list-item-weather">
+                            <p>17°C</p>
+                            <i class="wi wi-rain-wind"></i>
+                        </div>
+                    </li>
+                    <li class="list-item list-item--ninth">
+                        <h2>San-Francisco</h2>
+                        <div class="list-item-weather">
+                            <p>15°C</p>
+                            <i class="wi wi-day-sunny-overcast"></i>
+                        </div>
+                    </li>
+                    <li class="list-item list-item--tenth">
+                        <h2>Tokyo</h2>
+                        <div class="list-item-weather">
+                            <p>8°C</p>
+                            <i class="wi wi-night-clear"></i>
+                        </div>
+                    </li>
+                    <li class="list-item list-item--eleventh">
+                        <h2>Sydney</h2>
+                        <div class="list-item-weather">
+                            <p>25°C</p>
+                            <i class="wi wi-night-partly-cloudy"></i>
+                        </div>
+                    </li>
+                </ul>
+            </main>
+            <footer>
+                <p>
+                    Have a nice day and don't forget umbrella if you are in New
+                    Delhi now!
+                </p>
+            </footer>
+        </div>
     </body>
 </html>

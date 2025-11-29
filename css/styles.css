@@ -19,15 +19,17 @@
 
     /* text color site */
     --light-text-color: #ffffff;
+    --light-text-color-70: rgba(255, 255, 255, 0.7);
 
     /* star color site */
     --icon-color: #ffffff;
+    --icon-color-70: rgba(255, 255, 255, 0.7);
 }
 
 /* Lucida Sans Unicode Regular */
 @font-face {
-    font-family: "Aeonik";
-    src: url("../fonts/Lucida-Sans-Unicode-Regular.ttf") format("truetype");
+    font-family: "Lucida Sans Unicode Regular";
+    src: url("../font/Lucida-Sans-Unicode-Regular.ttf") format("truetype");
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -61,7 +63,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     border: 25px solid var(--dark-background-color);
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.6;
     font-weight: 400;
     font-family: "Lucida Sans Unicode", "Arial", sans-serif;
@@ -106,4 +108,120 @@ ul {
 button {
     padding: 0;
     cursor: pointer;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 40px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 35px;
+}
+
+.header {
+    display: flex;
+    gap: 4px;
+}
+.title {
+    font-size: 22px;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--light-text-color);
+}
+.wi-sunrise {
+    font-size: 34px;
+}
+.list {
+    width: 100%;
+    background-color: var(--light-background-color);
+    color: var(--light-text-color);
+    font-size: 22px;
+    border: 2px solid var(--light-background-color);
+    cursor: pointer;
+}
+.list-item {
+    border: 2px solid var(--light-background-color);
+    display: inline-block;
+    text-align: center;
+    padding: 26px 0;
+    transition: all 0.1s ease-in;
+}
+.list-item:hover {
+    opacity: 0.8;
+}
+.list-item--first {
+    background-color: var(--light-blue-color);
+    width: 50%;
+    margin-right: -4px;
+}
+.list-item--second {
+    background-color: var(--light-turquoise-color);
+    width: 25%;
+    margin-right: -4px;
+    margin-left: -2px;
+}
+.list-item--third {
+    background-color: var(--dark-purple-color);
+    width: 25%;
+    margin-right: -2px;
+    margin-left: -3px;
+}
+.list-item--fourth {
+    background-color: var(--dark-red-color);
+    width: 25%;
+    margin-right: -4px;
+}
+.list-item--fifth {
+    background-color: var(--light-red-color);
+    width: 25%;
+    margin-right: -4px;
+    margin-left: -2px;
+}
+.list-item--sixth {
+    background-color: var(--light-orange-color);
+    width: 25%;
+    margin-right: -3px;
+    margin-left: -3px;
+}
+.list-item--seventh {
+    background-color: var(--light-green-color);
+    width: 25%;
+    margin-right: -3px;
+    margin-left: -4px;
+}
+.list-item--eighth {
+    background-color: var(--dark-turquoise-color);
+    width: 25%;
+    margin-right: -4px;
+}
+.list-item--ninth {
+    background-color: var(--light-purple-color);
+    width: 50%;
+    margin-right: -4px;
+    margin-left: -2px;
+}
+.list-item--tenth {
+    background-color: var(--dark-green-color);
+    width: 25%;
+    margin-right: -3px;
+    margin-left: -3px;
+}
+.list-item--eleventh {
+    background-color: var(--dark-blue-color);
+    width: 100%;
+}
+.list-item i {
+    font-size: 42px;
+    color: var(--icon-color-70);
+}
+.list-item p {
+    color: var(--light-text-color-70);
+}
+.list-item-weather {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
