@@ -1,0 +1,109 @@
+:root {
+    /* background color site */
+    --light-background-color: #ffffff;
+    --medium-background-color: #3399cc;
+    --dark-background-color: #2b81ac;
+
+    /* background color city */
+    --light-blue-color: #3399cc;
+    --dark-blue-color: #666699;
+    --light-turquoise-color: #33cccc;
+    --dark-turquoise-color: #669999;
+    --light-red-color: #e2674a;
+    --dark-red-color: #c24747;
+    --light-purple-color: #cc6699;
+    --dark-purple-color: #996699;
+    --light-green-color: #99cc99;
+    --dark-green-color: #339966;
+    --light-orange-color: #ffcc66;
+
+    /* text color site */
+    --light-text-color: #ffffff;
+
+    /* star color site */
+    --icon-color: #ffffff;
+}
+
+/* Lucida Sans Unicode Regular */
+@font-face {
+    font-family: "Aeonik";
+    src: url("../fonts/Lucida-Sans-Unicode-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* base styles */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+    margin: 0 auto;
+    color: var(--light-text-color);
+    background: linear-gradient(
+            var(--light-blue-color) 0%,
+            rgba(51, 153, 204, 0.8) 30%,
+            rgba(51, 153, 204, 0.5) 50%,
+            rgba(51, 153, 204, 0.8) 70%,
+            var(--light-blue-color) 100%
+        ),
+        url("../images/background.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 25px solid var(--dark-background-color);
+    font-size: 18px;
+    line-height: 1.6;
+    font-weight: 400;
+    font-family: "Lucida Sans Unicode", "Arial", sans-serif;
+    width: 100vw;
+    height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+
+address {
+    font-style: normal;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+button {
+    padding: 0;
+    cursor: pointer;
+}
